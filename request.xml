@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+				  xmlns:gs="http://ws.br/soap">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <gs:getAlunoRequest>
+         <gs:alunoId>1</gs:alunoId>
+      </gs:getAlunoRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
