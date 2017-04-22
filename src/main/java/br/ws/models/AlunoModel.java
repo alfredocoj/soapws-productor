@@ -1,18 +1,15 @@
 package br.ws.models;
 
-import java.util.ArrayList;
-import java.util.List;
+import org.springframework.stereotype.Repository;
 
-import javax.annotation.PostConstruct;
+import javax.transaction.Transactional;
 
-import org.springframework.stereotype.Component;
-
-import br.ws.soap.Aluno;
-
-@Component
-public class AlunoModel {
+/*@Component*/
+@Repository
+@Transactional
+public class AlunoModel extends ModelBase<Object> {
 	
-	private static final List<Aluno> alunos = new ArrayList<Aluno>();
+	/*private static final List<Aluno> alunos = new ArrayList<Aluno>();
 	
 	
 	@PostConstruct
@@ -43,6 +40,6 @@ public class AlunoModel {
 		}
 		
 		return result;
-	}
+	}*/
 
 }
