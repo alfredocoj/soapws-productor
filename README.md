@@ -1,5 +1,5 @@
 # soapws-productor
-Producer SOAP web service
+Producer SOAP web service using Spring Framework.
 
 # Test the application
 
