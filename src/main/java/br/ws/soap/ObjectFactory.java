@@ -1,10 +1,3 @@
-//
-// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.7 
-// Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2017.04.13 às 11:24:52 AM BRT 
-//
-
 
 package br.ws.soap;
 
@@ -37,6 +30,30 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link PostAlunoResponse }
+     * 
+     */
+    public PostAlunoResponse createPostAlunoResponse() {
+        return new PostAlunoResponse();
+    }
+
+    /**
+     * Create an instance of {@link Aluno }
+     * 
+     */
+    public Aluno createAluno() {
+        return new Aluno();
+    }
+
+    /**
+     * Create an instance of {@link PostAlunoRequest }
+     * 
+     */
+    public PostAlunoRequest createPostAlunoRequest() {
+        return new PostAlunoRequest();
+    }
+
+    /**
      * Create an instance of {@link GetAlunoRequest }
      * 
      */
@@ -50,14 +67,6 @@ public class ObjectFactory {
      */
     public GetAlunoResponse createGetAlunoResponse() {
         return new GetAlunoResponse();
-    }
-
-    /**
-     * Create an instance of {@link Aluno }
-     * 
-     */
-    public Aluno createAluno() {
-        return new Aluno();
     }
 
 }

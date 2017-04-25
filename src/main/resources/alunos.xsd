@@ -7,6 +7,17 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+
+    <xs:element name="postAlunoRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="alunoName" type="xs:string"/>
+                <xs:element name="alunoIdade" type="xs:int"/>
+                <xs:element name="alunoClasse" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
     <xs:element name="getAlunoResponse">
         <xs:complexType>
             <xs:sequence>
@@ -14,6 +25,15 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+
+    <xs:element name="postAlunoResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="aluno" type="tns:aluno"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
     <xs:complexType name="aluno">
         <xs:sequence>
             <xs:element name="alunoId" type="xs:int"/>

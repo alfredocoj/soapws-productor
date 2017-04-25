@@ -1,10 +1,3 @@
-//
-// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.7 
-// Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2017.04.13 às 11:24:52 AM BRT 
-//
-
 
 package br.ws.soap;
 
@@ -37,7 +30,7 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "aluno", propOrder = {
+@XmlType(name = "aluno", namespace = "http://ws.br/soap", propOrder = {
     "alunoId",
     "alunoName",
     "alunoIdade",
@@ -45,11 +38,13 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class Aluno {
 
+    @XmlElement(namespace = "http://ws.br/soap")
     protected int alunoId;
-    @XmlElement(required = true)
+    @XmlElement(namespace = "http://ws.br/soap", required = true)
     protected String alunoName;
+    @XmlElement(namespace = "http://ws.br/soap")
     protected int alunoIdade;
-    @XmlElement(required = true)
+    @XmlElement(namespace = "http://ws.br/soap", required = true)
     protected String alunoClasse;
 
     /**
