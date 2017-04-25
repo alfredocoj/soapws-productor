@@ -1,12 +1,12 @@
 package br.ws;
 
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRegistration.Dynamic;
-
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.ws.transport.http.MessageDispatcherServlet;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRegistration.Dynamic;
 
 public class WebAppInitializer implements WebApplicationInitializer {
 
@@ -19,7 +19,7 @@ public class WebAppInitializer implements WebApplicationInitializer {
 	servlet.setApplicationContext(ctx);
 	servlet.setTransformWsdlLocations(true);
         Dynamic dynamic = servletContext.addServlet("dispatcher",servlet);  
-        dynamic.addMapping("/wssoap/*");  
+        dynamic.addMapping("/ws/*");
         dynamic.setLoadOnStartup(1);  
 		
 	}
