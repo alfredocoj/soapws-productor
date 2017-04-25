@@ -16,8 +16,8 @@ public class WebAppInitializer implements WebApplicationInitializer {
         ctx.register(WsAppConfiguration.class);  
         ctx.setServletContext(servletContext);    
         MessageDispatcherServlet servlet = new MessageDispatcherServlet();
-	servlet.setApplicationContext(ctx);
-	servlet.setTransformWsdlLocations(true);
+	    servlet.setApplicationContext(ctx);
+	    servlet.setTransformWsdlLocations(true);
         Dynamic dynamic = servletContext.addServlet("dispatcher",servlet);  
         dynamic.addMapping("/ws/*");
         dynamic.setLoadOnStartup(1);  
