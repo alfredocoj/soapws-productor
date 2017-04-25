@@ -1,0 +1,11 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gs="http://ws.br/soap">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <gs:postAlunoRequest>
+            <gs:alunoName>Alfredo Costa Oliveira Junior</gs:alunoName>
+            <gs:alunoIdade>26</gs:alunoIdade>
+            <gs:alunoClasse>A1</gs:alunoClasse>
+        </gs:postAlunoRequest>
+    </soapenv:Body>
+</soapenv:Envelope>
